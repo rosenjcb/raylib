@@ -102,7 +102,9 @@ int main(void)
             ClearBackground(RAYWHITE);
 
             BeginMode3D(camera);
+	    	rlEnableDepthMask();
                 DrawModel(skybox, (Vector3){0, 0, 0}, 1.0f, WHITE);
+	    	rlDisableDepthMask();
                 DrawGrid(10, 1.0f);
             EndMode3D();
 
