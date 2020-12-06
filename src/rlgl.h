@@ -1439,6 +1439,12 @@ void rlEnableDepthTest(void) { glEnable(GL_DEPTH_TEST); }
 // Disable depth test
 void rlDisableDepthTest(void) { glDisable(GL_DEPTH_TEST); }
 
+// Enable depth writes
+void rlEnableDepthMask(void) { glDepthMask(GL_TRUE); }
+
+// Disable depth writes
+void rlDisableDepthMask(void) { glDepthMask(GL_FALSE); }
+
 // Enable backface culling
 void rlEnableBackfaceCulling(void) { glEnable(GL_CULL_FACE); }
 
@@ -4952,12 +4958,6 @@ int GetPixelDataSize(int width, int height, int format)
 
     return dataSize;
 }
-
-// Enable depth writes
-void rlEnableDepthMask(void) { glDepthMask(GL_TRUE); }
-
-// Disable depth writes
-void rlDisableDepthMask(void) { glDepthMask(GL_FALSE); }
 
 #endif  // RLGL_STANDALONE
 
