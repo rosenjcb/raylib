@@ -4952,6 +4952,13 @@ int GetPixelDataSize(int width, int height, int format)
 
     return dataSize;
 }
+
+// Enable depth writes
+void rlEnableDepthMask(void) { glDepthMask(GL_TRUE); }
+
+// Disable depth writes
+void rlDisableDepthMask(void) { glDepthMask(GL_FALSE); }
+
 #endif  // RLGL_STANDALONE
 
 #endif  // RLGL_IMPLEMENTATION
