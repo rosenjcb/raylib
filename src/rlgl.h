@@ -513,6 +513,8 @@ RLAPI void rlEnableFramebuffer(unsigned int id);              // Enable render t
 RLAPI void rlDisableFramebuffer(void);                        // Disable render texture (fbo), return to default framebuffer
 RLAPI void rlEnableDepthTest(void);                           // Enable depth test
 RLAPI void rlDisableDepthTest(void);                          // Disable depth test
+RLAPI void rlEnableDepthMask(void);                           // Enable DepthMask
+RLAPI void rlDisableDepthMask(void);                          // Disable Depthmask
 RLAPI void rlEnableBackfaceCulling(void);                     // Enable backface culling
 RLAPI void rlDisableBackfaceCulling(void);                    // Disable backface culling
 RLAPI void rlEnableScissorTest(void);                         // Enable scissor test
